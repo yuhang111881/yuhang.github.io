@@ -71,6 +71,97 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-gitees上传注意事项" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/09/25/gitees%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="article-date">
+  <time class="dt-published" datetime="2022-09-25T10:45:22.000Z" itemprop="datePublished">2022-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/09/25/gitees%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">gitees上传注意事项</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"><a href="#方法2、本地初始化一个仓库，设置远程仓库地址后再做push" class="headerlink" title="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"></a>方法2、本地初始化一个仓库，设置远程仓库地址后再做push</h3><p>和方法1的差别，在于先创建仓库。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git init </span><br><span class="line">$ git remote add origin https://gitee.com/用户个性地址/HelloGitee.git</span><br></pre></td></tr></table></figure>
+
+<p>这样就完成了版本的一次初始化。<br>接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+
+<p>修改&#x2F;添加文件，否则与原文件相比就没有变动。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;第一次提交&quot;</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+
+<p>然后如果需要账号密码的话就输入账号密码，这样就完成了一次提交。此时，你可以在你的个人面板、仓库主页查看到你的提交记录。</p>
+<p>在新建仓库时，如果在 Gitee 平台仓库上已经存在 readme 或其他文件，在提交时可能会存在冲突，这时用户需要选择的是保留线上的文件或者舍弃线上的文件，如果您舍弃线上的文件，则在推送时选择强制推送，强制推送需要执行下面的命令(默认不推荐该行为)：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push origin master -f</span><br></pre></td></tr></table></figure>
+
+<p>如果您选择保留线上的 readme 文件,则需要先执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin master</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/09/25/gitees%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" data-id="cl8h82rlh000054v4hfi452y3" data-title="gitees上传注意事项" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-web开发" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/09/25/web%E5%BC%80%E5%8F%91/" class="article-date">
+  <time class="dt-published" datetime="2022-09-25T10:44:37.000Z" itemprop="datePublished">2022-09-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/09/25/web%E5%BC%80%E5%8F%91/">web开发</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/09/25/web%E5%BC%80%E5%8F%91/" data-id="cl8h82rm2000354v46yijdzf9" data-title="web开发" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-标题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/09/25/%E6%A0%87%E9%A2%98/" class="article-date">
@@ -144,7 +235,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/25/%E6%A0%87%E9%A2%98/" data-id="cl8h78vxd0001kkv44bcv5mz0" data-title="标题" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/25/%E6%A0%87%E9%A2%98/" data-id="cl8h82rm0000254v49kto3qop" data-title="标题" class="article-share-link">Share</a>
       
       
       
@@ -195,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/25/hello-world/" data-id="cl8h78vx20000kkv4fld5dg33" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/25/hello-world/" data-id="cl8h82rll000154v4b7p74jak" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -236,6 +327,14 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/09/25/gitees%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">gitees上传注意事项</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/25/web%E5%BC%80%E5%8F%91/">web开发</a>
+          </li>
         
           <li>
             <a href="/2022/09/25/%E6%A0%87%E9%A2%98/">标题</a>
