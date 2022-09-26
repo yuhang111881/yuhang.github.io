@@ -16,22 +16,22 @@
   <meta name="author" content="余航">
   <meta name="keywords" content="余航个人博客">
   
-    <meta name="description" content="一、安装linux系统最小化安装 二、安装所需要环境mysql1、安装新版mysql前，需将系统自带的mariadb-lib卸载rpm -qa|grep mariadb 2、删除自带的mariadbrpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64（此处跟显示的包名） 3、进行：yum -y install wget 安装从网上下载文件的wget命">
+    <meta name="description" content="方法2、本地初始化一个仓库，设置远程仓库地址后再做push和方法1的差别，在于先创建仓库。 12$ git init $ git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;用户个性地址&#x2F;HelloGitee.git  这样就完成了版本的一次初始化。接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行： 1$ git pull origin master  修改&amp;#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="linux项目部署">
-<meta property="og:url" content="http://yuhang111881.github.io/2022/09/25/linux%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/index.html">
+<meta property="og:title" content="gitee上传注意事项">
+<meta property="og:url" content="http://yuhang111881.github.io/2022/09/25/gitee%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/index.html">
 <meta property="og:site_name" content="Future">
-<meta property="og:description" content="一、安装linux系统最小化安装 二、安装所需要环境mysql1、安装新版mysql前，需将系统自带的mariadb-lib卸载rpm -qa|grep mariadb 2、删除自带的mariadbrpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64（此处跟显示的包名） 3、进行：yum -y install wget 安装从网上下载文件的wget命">
+<meta property="og:description" content="方法2、本地初始化一个仓库，设置远程仓库地址后再做push和方法1的差别，在于先创建仓库。 12$ git init $ git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;用户个性地址&#x2F;HelloGitee.git  这样就完成了版本的一次初始化。接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行： 1$ git pull origin master  修改&amp;#">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-25T08:32:37.000Z">
-<meta property="article:modified_time" content="2022-09-25T14:22:08.878Z">
+<meta property="article:published_time" content="2022-09-25T10:45:22.000Z">
+<meta property="article:modified_time" content="2022-09-26T05:32:24.171Z">
 <meta property="article:author" content="余航">
 <meta property="article:tag" content="余航个人博客">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>linux项目部署 - Future</title>
+  <title>gitee上传注意事项 - Future</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -172,7 +172,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="linux项目部署"></span>
+            <span id="subtitle" data-typed-text="gitee上传注意事项"></span>
           
         </div>
 
@@ -188,8 +188,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-25 16:32" pubdate>
-          2022年9月25日 下午
+        <time datetime="2022-09-25 18:45" pubdate>
+          2022年9月25日 晚上
         </time>
       </span>
     
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          516 字
         
       </span>
     
@@ -211,7 +211,7 @@
         
         
         
-          19 分钟
+          5 分钟
         
       </span>
     
@@ -249,58 +249,26 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">linux项目部署</h1>
+            <h1 style="display: none">gitee上传注意事项</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="一、安装linux系统"><a href="#一、安装linux系统" class="headerlink" title="一、安装linux系统"></a>一、安装linux系统</h1><p>最小化安装</p>
-<h1 id="二、安装所需要环境mysql"><a href="#二、安装所需要环境mysql" class="headerlink" title="二、安装所需要环境mysql"></a>二、安装所需要环境mysql</h1><h5 id="1、安装新版mysql前，需将系统自带的mariadb-lib卸载"><a href="#1、安装新版mysql前，需将系统自带的mariadb-lib卸载" class="headerlink" title="1、安装新版mysql前，需将系统自带的mariadb-lib卸载"></a>1、安装新版mysql前，需将系统自带的mariadb-lib卸载</h5><p><code>rpm -qa|grep mariadb</code></p>
-<h5 id="2、删除自带的mariadb"><a href="#2、删除自带的mariadb" class="headerlink" title="2、删除自带的mariadb"></a>2、删除自带的mariadb</h5><p><code>rpm -e --nodeps mariadb-libs-5.5.60-1.el7_5.x86_64</code>（此处跟显示的包名）</p>
-<h5 id="3、进行：yum-y-install-wget-安装从网上下载文件的wget命令"><a href="#3、进行：yum-y-install-wget-安装从网上下载文件的wget命令" class="headerlink" title="3、进行：yum -y install wget 安装从网上下载文件的wget命令"></a>3、进行：yum -y install wget 安装从网上下载文件的wget命令</h5><h5 id="4、添加repo源-下载源-5-7-版本"><a href="#4、添加repo源-下载源-5-7-版本" class="headerlink" title="4、添加repo源 下载源 5.7 版本"></a>4、添加repo源 下载源 5.7 版本</h5><p> <code>wget http://repo.mysql.com/mysql80-community-release-el7-3.noarch.rpm</code> </p>
-<h5 id="5、安装rpm包："><a href="#5、安装rpm包：" class="headerlink" title="5、安装rpm包："></a>5、安装rpm包：</h5><h5 id="rpm-ivh-mysql80-community-release-el7-3-noarch-rpm包"><a href="#rpm-ivh-mysql80-community-release-el7-3-noarch-rpm包" class="headerlink" title="rpm -ivh mysql80-community-release-el7-3.noarch.rpm包"></a><code>rpm -ivh mysql80-community-release-el7-3.noarch.rpm</code>包</h5><h5 id="6、安装mysql"><a href="#6、安装mysql" class="headerlink" title="6、安装mysql"></a>6、安装mysql</h5><h5 id="yum-install-mysql-server"><a href="#yum-install-mysql-server" class="headerlink" title="yum install mysql-server"></a><code>yum install mysql-server</code></h5><h6 id="若出现-GPG-Keys-are-configured-as-file-x2F-x2F-x2F-etc-x2F-pki-x2F-rpm-gpg-x2F-RPM-GPG-KEY-mysql"><a href="#若出现-GPG-Keys-are-configured-as-file-x2F-x2F-x2F-etc-x2F-pki-x2F-rpm-gpg-x2F-RPM-GPG-KEY-mysql" class="headerlink" title="若出现.GPG Keys are configured as: file:&#x2F;&#x2F;&#x2F;etc&#x2F;pki&#x2F;rpm-gpg&#x2F;RPM-GPG-KEY-mysql"></a>若出现.GPG Keys are configured as: file:&#x2F;&#x2F;&#x2F;etc&#x2F;pki&#x2F;rpm-gpg&#x2F;RPM-GPG-KEY-mysql</h6><h6 id="则rpm-import-https-repo-mysql-com-RPM-GPG-KEY-mysql-2022"><a href="#则rpm-import-https-repo-mysql-com-RPM-GPG-KEY-mysql-2022" class="headerlink" title="则rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022"></a>则<code>rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022</code></h6><h6 id="然后在执行安装mysql-yum-install-mysql-server"><a href="#然后在执行安装mysql-yum-install-mysql-server" class="headerlink" title="然后在执行安装mysql yum install mysql-server"></a>然后在执行安装mysql <code>yum install mysql-server</code></h6><h5 id="7、按照提示进行下一步操作，安装结束，使用以下命令检查安装状态"><a href="#7、按照提示进行下一步操作，安装结束，使用以下命令检查安装状态" class="headerlink" title="7、按照提示进行下一步操作，安装结束，使用以下命令检查安装状态"></a>7、按照提示进行下一步操作，安装结束，使用以下命令检查安装状态</h5><p><code>systemctl status mysqld</code></p>
-<h5 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h5><h1 id="三、接下来安装jdk"><a href="#三、接下来安装jdk" class="headerlink" title="三、接下来安装jdk"></a>三、接下来安装jdk</h1><h5 id="1、将jdk安装文件上传至目录（随意）"><a href="#1、将jdk安装文件上传至目录（随意）" class="headerlink" title="1、将jdk安装文件上传至目录（随意）"></a>1、将jdk安装文件上传至目录（随意）</h5><p>&#x2F;usr&#x2F;local（为例）</p>
-<h5 id="2、解压"><a href="#2、解压" class="headerlink" title="2、解压"></a>2、解压</h5><p>tar -zxvf 文件名</p>
-<h5 id="3、并修改配置文件，vi-x2F-etc-x2F-profile"><a href="#3、并修改配置文件，vi-x2F-etc-x2F-profile" class="headerlink" title="3、并修改配置文件，vi &#x2F;etc&#x2F;profile"></a>3、并修改配置文件，vi &#x2F;etc&#x2F;profile</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment">#Java Env</span><br><br><span class="hljs-built_in">export</span> JAVA_HOME= 自己的路径<br><span class="hljs-built_in">export</span> <span class="hljs-attribute">CLASSPATH</span>=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar<br><span class="hljs-built_in">export</span> <span class="hljs-attribute">PATH</span>=<span class="hljs-variable">$PATH</span>:$JAVA_HOME/bin<br></code></pre></td></tr></table></figure>
+                <h3 id="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"><a href="#方法2、本地初始化一个仓库，设置远程仓库地址后再做push" class="headerlink" title="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"></a>方法2、本地初始化一个仓库，设置远程仓库地址后再做push</h3><p>和方法1的差别，在于先创建仓库。</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">$ git init <br>$ git remote add origin https:<span class="hljs-regexp">//gi</span>tee.com<span class="hljs-regexp">/用户个性地址/</span>HelloGitee.git<br></code></pre></td></tr></table></figure>
 
-<h6 id="若出现-bash-usr-local-jdk1-8-0-341-bin-java-lib-ld-linux-so-2-bad-ELF-interpreter-没有那个文件或目录"><a href="#若出现-bash-usr-local-jdk1-8-0-341-bin-java-lib-ld-linux-so-2-bad-ELF-interpreter-没有那个文件或目录" class="headerlink" title="若出现-bash: /usr/local/jdk1.8.0_341/bin/java: /lib/ld-linux.so.2: bad ELF interpreter: 没有那个文件或目录"></a>若出现<code>-bash: /usr/local/jdk1.8.0_341/bin/java: /lib/ld-linux.so.2: bad ELF interpreter: </code>没有那个文件或目录</h6><p>使用命令<code>yum install glibc.i686</code></p>
-<h5 id="完成后即可验证"><a href="#完成后即可验证" class="headerlink" title="完成后即可验证"></a>完成后即可验证</h5><p><code>Java -version</code></p>
-<h5 id="查看jdk版本以及是否安装"><a href="#查看jdk版本以及是否安装" class="headerlink" title="查看jdk版本以及是否安装"></a>查看jdk版本以及是否安装</h5><h1 id="四、安装maven"><a href="#四、安装maven" class="headerlink" title="四、安装maven"></a>四、安装maven</h1><h5 id="将jdk文件上传至目录"><a href="#将jdk文件上传至目录" class="headerlink" title="将jdk文件上传至目录"></a>将jdk文件上传至目录</h5><p>&#x2F;usr&#x2F;local</p>
-<h5 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h5><p>tar -zxvf 文件名</p>
-<h5 id="并修改配置文件，vi-x2F-etc-x2F-profile"><a href="#并修改配置文件，vi-x2F-etc-x2F-profile" class="headerlink" title="并修改配置文件，vi &#x2F;etc&#x2F;profile"></a>并修改配置文件，vi &#x2F;etc&#x2F;profile</h5><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-attribute">MAVEN_HOME</span>=/var/jenkins_home/thh/apache-maven-3.6.3 <span class="hljs-built_in">export</span> MAVEN_HOME <span class="hljs-built_in">export</span> <span class="hljs-attribute">PATH</span>=<span class="hljs-variable">$&#123;PATH&#125;</span>:$&#123;MAVEN_HOME&#125;/bin<br></code></pre></td></tr></table></figure>
+<p>这样就完成了版本的一次初始化。<br>接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git pull origin <span class="hljs-literal">master</span><br></code></pre></td></tr></table></figure>
 
-<h5 id="mvn-v-查看安装是否成功"><a href="#mvn-v-查看安装是否成功" class="headerlink" title="mvn -v 查看安装是否成功"></a>mvn -v 查看安装是否成功</h5><h1 id="五、安装tomcat"><a href="#五、安装tomcat" class="headerlink" title="五、安装tomcat"></a>五、安装tomcat</h1><h1 id="六、配置mysql"><a href="#六、配置mysql" class="headerlink" title="六、配置mysql"></a>六、配置mysql</h1><h5 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h5><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">service mysqld <span class="hljs-literal">start</span><br></code></pre></td></tr></table></figure>
+<p>修改&#x2F;添加文件，否则与原文件相比就没有变动。</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>git add .<br><span class="hljs-variable">$ </span>git commit -m <span class="hljs-string">&quot;第一次提交&quot;</span><br><span class="hljs-variable">$ </span>git push origin master<br></code></pre></td></tr></table></figure>
 
-<p>注：mysql5.7 版本以上默认密码不再是为空了，而是在安装时会随机生成一个默认密码<br>用以下命令可查看该默认的密码</p>
-<p><code>grep &quot;temporary password&quot; /var/log/mysqld.log</code></p>
-<p>更改mysql 用户密码<br>登录mysql</p>
-<p><code>mysql -u root -p</code></p>
-<p>输入查看到的默认密码</p>
-<p>修改密码<br>mysql5.7版本以后的修改密码语句</p>
-<p><code>ALTER USER USER() IDENTIFIED BY &#39;Admin@123456&#39;;</code></p>
-<p>一开始有难度设定，在设定完较难的难度后，我们拥有权限后就可以查询</p>
-<p><code>SHOW VARIABLES LIKE &#39;validate_password%&#39;;</code></p>
-<p>修改密码难度</p>
-<p><code>set global validate_password.policy=LOW;</code></p>
-<p>然后修改用户运行远程登录</p>
-<p><code>mysql&gt; use mysql;</code></p>
-<p>修改连接时候密码</p>
-<p><code>mysql&gt; update user set host = &#39;%&#39; where user = &#39;root&#39;;</code><br><code>mysql&gt; FLUSH PRIVILEGES;</code><br><code>mysql&gt; select host, user from user;</code></p>
-<p><code>mysql&gt;ALTER USER &#39;root&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;Admin@123456&#39;;</code></p>
-<p><code>mysql&gt; FLUSH PRIVILEGES;</code></p>
-<p>完成后即可使用Navicat Premium 15远程连接数据库并进行配置</p>
-<h2 id="七、开放端口3306"><a href="#七、开放端口3306" class="headerlink" title="七、开放端口3306"></a>七、开放端口3306</h2><p>1、开启防火墙</p>
-<p>systemctl start firewalld</p>
-<p>2、开放端口3306</p>
-<p>firewall-<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=cmd&spm=1001.2101.3001.7020">cmd</a> –zone&#x3D;public –add-port&#x3D;3306&#x2F;tcp –permanent</p>
-<p>3、重启防火墙</p>
-<p>firewall-cmd –reload</p>
-<h1 id="附一、卸载mysql"><a href="#附一、卸载mysql" class="headerlink" title="附一、卸载mysql"></a>附一、卸载mysql</h1><p>使用<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=yum&spm=1001.2101.3001.7020">yum</a>安装的Mysql需要先进行清除 命令：</p>
-<p><code>yum remove mysql mysql-server mysql-libs mysql-serve.</code></p>
-<p>再次查询是否有剩余文件 命令：</p>
-<p><code>rpm -qa|grep mysql</code></p>
-<p>使用过rpm -ev +对应文件名 删除剩余文件 命令：</p>
-<p>rpm -ev 显示文件名</p>
+<p>然后如果需要账号密码的话就输入账号密码，这样就完成了一次提交。此时，你可以在你的个人面板、仓库主页查看到你的提交记录。</p>
+<p>在新建仓库时，如果在 Gitee 平台仓库上已经存在 readme 或其他文件，在提交时可能会存在冲突，这时用户需要选择的是保留线上的文件或者舍弃线上的文件，如果您舍弃线上的文件，则在推送时选择强制推送，强制推送需要执行下面的命令(默认不推荐该行为)：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git push origin <span class="hljs-keyword">master</span> <span class="hljs-title">-f</span><br></code></pre></td></tr></table></figure>
+
+<p>如果您选择保留线上的 readme 文件,则需要先执行：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git pull origin <span class="hljs-literal">master</span><br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -308,27 +276,6 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
   
   
 </div>
@@ -339,8 +286,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>linux项目部署</div>
-      <div>http://yuhang111881.github.io/2022/09/25/linux项目部署/</div>
+      <div>gitee上传注意事项</div>
+      <div>http://yuhang111881.github.io/2022/09/25/gitee上传注意事项/</div>
     </div>
     <div class="license-meta">
       
@@ -384,15 +331,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F(1)/" title="微信小程序开发">
+                      <a href="/2022/09/25/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="hexo个人博客搭建">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">微信小程序开发</span>
+                        <span class="hidden-mobile">hexo个人博客搭建</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2022/09/25/web%E5%BC%80%E5%8F%91/" title="web开发">
+                        <span class="hidden-mobile">web开发</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

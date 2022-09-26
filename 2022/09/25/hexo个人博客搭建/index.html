@@ -13,25 +13,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="yu hang">
+  <meta name="author" content="余航">
   <meta name="keywords" content="余航个人博客">
   
-    <meta name="description" content="方法2、本地初始化一个仓库，设置远程仓库地址后再做push和方法1的差别，在于先创建仓库。 12$ git init $ git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;用户个性地址&#x2F;HelloGitee.git  这样就完成了版本的一次初始化。接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行： 1$ git pull origin master  修改&amp;#">
+    <meta name="description" content="一、安装git二、安装node.js三、安装typora四、安装hexo博客1cnpm install -g hexo-cli  1hexo -v  &#x3D;&#x3D;查看安装是否成功以及版本  1、建站hexo init  name 初始化博客 &#x2F;&#x2F;创建一个name文件夹 hexo s开启服务 服务启动后即可使用： http:&#x2F;&#x2F;localhost:4000&#x2F; 进行访问 随后可进行私人定制">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gitees上传注意事项">
-<meta property="og:url" content="http://example.com/2022/09/25/gitees%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/index.html">
+<meta property="og:title" content="hexo个人博客搭建">
+<meta property="og:url" content="http://yuhang111881.github.io/2022/09/25/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Future">
-<meta property="og:description" content="方法2、本地初始化一个仓库，设置远程仓库地址后再做push和方法1的差别，在于先创建仓库。 12$ git init $ git remote add origin https:&#x2F;&#x2F;gitee.com&#x2F;用户个性地址&#x2F;HelloGitee.git  这样就完成了版本的一次初始化。接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行： 1$ git pull origin master  修改&amp;#">
+<meta property="og:description" content="一、安装git二、安装node.js三、安装typora四、安装hexo博客1cnpm install -g hexo-cli  1hexo -v  &#x3D;&#x3D;查看安装是否成功以及版本  1、建站hexo init  name 初始化博客 &#x2F;&#x2F;创建一个name文件夹 hexo s开启服务 服务启动后即可使用： http:&#x2F;&#x2F;localhost:4000&#x2F; 进行访问 随后可进行私人定制">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-25T10:45:22.000Z">
-<meta property="article:modified_time" content="2022-09-25T10:45:36.080Z">
-<meta property="article:author" content="yu hang">
-<meta property="article:tag" content="余航个人博客">
+<meta property="article:published_time" content="2022-09-25T14:20:20.000Z">
+<meta property="article:modified_time" content="2022-09-26T06:04:50.767Z">
+<meta property="article:author" content="余航">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>gitees上传注意事项 - Future</title>
+  <title>hexo个人博客搭建 - Future</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -69,7 +69,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"yuhang111881.github.io","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":90,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -172,7 +172,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="gitees上传注意事项"></span>
+            <span id="subtitle" data-typed-text="hexo个人博客搭建"></span>
           
         </div>
 
@@ -180,10 +180,15 @@
           
   <div class="mt-3">
     
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        余航
+      </span>
+    
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-25 18:45" pubdate>
+        <time datetime="2022-09-25 22:20" pubdate>
           2022年9月25日 晚上
         </time>
       </span>
@@ -195,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          516 字
+          1.1k 字
         
       </span>
     
@@ -206,7 +211,7 @@
         
         
         
-          5 分钟
+          9 分钟
         
       </span>
     
@@ -244,26 +249,45 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">gitees上传注意事项</h1>
+            <h1 style="display: none">hexo个人博客搭建</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"><a href="#方法2、本地初始化一个仓库，设置远程仓库地址后再做push" class="headerlink" title="方法2、本地初始化一个仓库，设置远程仓库地址后再做push"></a>方法2、本地初始化一个仓库，设置远程仓库地址后再做push</h3><p>和方法1的差别，在于先创建仓库。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">$ git init <br>$ git remote add origin https:<span class="hljs-regexp">//gi</span>tee.com<span class="hljs-regexp">/用户个性地址/</span>HelloGitee.git<br></code></pre></td></tr></table></figure>
+                <h1 id="一、安装git"><a href="#一、安装git" class="headerlink" title="一、安装git"></a>一、安装git</h1><h1 id="二、安装node-js"><a href="#二、安装node-js" class="headerlink" title="二、安装node.js"></a>二、安装node.js</h1><h1 id="三、安装typora"><a href="#三、安装typora" class="headerlink" title="三、安装typora"></a>三、安装typora</h1><h1 id="四、安装hexo博客"><a href="#四、安装hexo博客" class="headerlink" title="四、安装hexo博客"></a>四、安装hexo博客</h1><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">cnpm install -g hexo-<span class="hljs-keyword">cli</span><br></code></pre></td></tr></table></figure>
 
-<p>这样就完成了版本的一次初始化。<br>接下去，进入你已经初始化好的或者克隆仓库的目录,然后执行：</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git pull origin <span class="hljs-literal">master</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">hexo -v  <span class="hljs-operator">=</span><span class="hljs-operator">=</span>查看安装是否成功以及版本<br></code></pre></td></tr></table></figure>
 
-<p>修改&#x2F;添加文件，否则与原文件相比就没有变动。</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-variable">$ </span>git add .<br><span class="hljs-variable">$ </span>git commit -m <span class="hljs-string">&quot;第一次提交&quot;</span><br><span class="hljs-variable">$ </span>git push origin master<br></code></pre></td></tr></table></figure>
+<h4 id="1、建站"><a href="#1、建站" class="headerlink" title="1、建站"></a>1、建站</h4><p>hexo init  name 初始化博客 &#x2F;&#x2F;创建一个name文件夹</p>
+<p>hexo s开启服务</p>
+<p>服务启动后即可使用： <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 进行访问</p>
+<p>随后可进行私人定制修改等操作</p>
+<h5 id="source-x2F-posts-markdown文件存放目录"><a href="#source-x2F-posts-markdown文件存放目录" class="headerlink" title="source&#x2F;_posts:markdown文件存放目录"></a>source&#x2F;_posts:markdown文件存放目录</h5><h3 id="五、上传github-托管"><a href="#五、上传github-托管" class="headerlink" title="五、上传github 托管"></a>五、上传github 托管</h3><p>1、配置github的用户名邮箱</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">打开git bash<br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> <span class="hljs-string">&quot;yourname&quot;</span><br>git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.email</span> <span class="hljs-string">&quot;youremail&quot;</span><br></code></pre></td></tr></table></figure>
 
-<p>然后如果需要账号密码的话就输入账号密码，这样就完成了一次提交。此时，你可以在你的个人面板、仓库主页查看到你的提交记录。</p>
-<p>在新建仓库时，如果在 Gitee 平台仓库上已经存在 readme 或其他文件，在提交时可能会存在冲突，这时用户需要选择的是保留线上的文件或者舍弃线上的文件，如果您舍弃线上的文件，则在推送时选择强制推送，强制推送需要执行下面的命令(默认不推荐该行为)：</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git push origin <span class="hljs-keyword">master</span> <span class="hljs-title">-f</span><br></code></pre></td></tr></table></figure>
+<p>2、然后创建SSH</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">ssh-keygen -t rsa -C <span class="hljs-string">&quot;youremail&quot;</span> <span class="hljs-regexp">//y</span>ouremail输入你GitHub的邮箱<br></code></pre></td></tr></table></figure>
 
-<p>如果您选择保留线上的 readme 文件,则需要先执行：</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">$ git pull origin <span class="hljs-literal">master</span><br></code></pre></td></tr></table></figure>
+<p>​	这个时候就会生成.ssh文件夹在你的计算机中,我的是在	C:\Users.ssh</p>
+<p>3、而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key把你的id_rsa.pub里面的信息复制进去.</p>
+<p>4、返回到Git Bash</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">ssh -T <span class="hljs-symbol">git@</span>github.com <span class="hljs-comment">//查看是否成功，</span><br></code></pre></td></tr></table></figure>
+
+<p>看见sucessfully字样即成功。</p>
+<p>5、随后将hexo与github关联起来</p>
+<p>进入hexo文件夹，编辑——config.yml配置文件</p>
+<p>修改</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs awk">deploy：<br><br>​	type：git<br><br>​	repo：https：<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/name/</span>name.github.io.git<br><br>​	branch：master<br>住：：（冒号）后面带一个空格<br></code></pre></td></tr></table></figure>
+
+<p>6、安装deploy-git也就是部署的命令,这样你才能用命令部署到GitHub</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure>
+
+<p>7、执行以下三条命令将其部署到github中，稍等片刻即可访问</p>
+<figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs verilog">hexo clean   <span class="hljs-comment">//hexo clean清除了你之前生成的东西，也可以不加</span><br>hexo <span class="hljs-keyword">generate</span> 或者 hexo g   <span class="hljs-comment">//生成静态文章，可以用 hexo g缩写</span><br>hexo deploy 或者 hexo d    <span class="hljs-comment">//部署文章，可以用hexo d缩写,注意deploy时可能要你输入username和password</span><br></code></pre></td></tr></table></figure>
+
+<p>看到deploy done ：git字样即成功部署</p>
+<p>随后即可访问</p>
+<p>http：&#x2F;&#x2F;yourname.giuhub.io进行访问</p>
 
                 
               </div>
@@ -272,6 +296,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/hexo/">#hexo</a>
+      
+    </div>
   
 </div>
 
@@ -281,14 +333,14 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>gitees上传注意事项</div>
-      <div>http://example.com/2022/09/25/gitees上传注意事项/</div>
+      <div>hexo个人博客搭建</div>
+      <div>http://yuhang111881.github.io/2022/09/25/hexo个人博客搭建/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>yu hang</div>
+          <div>余航</div>
         </div>
       
       
@@ -330,8 +382,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/25/web%E5%BC%80%E5%8F%91/" title="web开发">
-                        <span class="hidden-mobile">web开发</span>
+                      <a href="/2022/09/25/gitee%E4%B8%8A%E4%BC%A0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" title="gitee上传注意事项">
+                        <span class="hidden-mobile">gitee上传注意事项</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
