@@ -16,22 +16,22 @@
   <meta name="author" content="余航">
   <meta name="keywords" content="余航个人博客">
   
-    <meta name="description" content="#一、静态web #二、动态web #三、css #四、JavaScript #五、jQuery #六、vue">
+    <meta name="description" content="使用骨架创建Maven Web项目1、新建项目–maven–从archetype创建—maven-archetypt-webapp–main目录创建文件夹java–创建文件夹resources。（补齐需要的文件夹） 在pom.xml中添加Tomcat Maven插件 123456789&lt;build&gt;  &lt;plugins&gt;    &lt;plugin&gt;      &amp;lt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web开发笔记">
-<meta property="og:url" content="http://yuhang111881.github.io/2022/09/28/web/index.html">
+<meta property="og:title" content="JavaWeb">
+<meta property="og:url" content="http://yuhang111881.github.io/2022/09/28/JavaWeb/index.html">
 <meta property="og:site_name" content="Future">
-<meta property="og:description" content="#一、静态web #二、动态web #三、css #四、JavaScript #五、jQuery #六、vue">
+<meta property="og:description" content="使用骨架创建Maven Web项目1、新建项目–maven–从archetype创建—maven-archetypt-webapp–main目录创建文件夹java–创建文件夹resources。（补齐需要的文件夹） 在pom.xml中添加Tomcat Maven插件 123456789&lt;build&gt;  &lt;plugins&gt;    &lt;plugin&gt;      &amp;lt">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-28T10:18:46.266Z">
-<meta property="article:modified_time" content="2022-09-28T10:18:47.822Z">
+<meta property="article:published_time" content="2022-09-28T14:04:49.952Z">
+<meta property="article:modified_time" content="2022-09-29T12:37:53.649Z">
 <meta property="article:author" content="余航">
-<meta property="article:tag" content="余航个人博客">
+<meta property="article:tag" content="Maven">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>web开发笔记 - Future</title>
+  <title>JavaWeb - Future</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -172,7 +172,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="web开发笔记"></span>
+            <span id="subtitle" data-typed-text="JavaWeb"></span>
           
         </div>
 
@@ -188,7 +188,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-28 18:18" pubdate>
+        <time datetime="2022-09-28 22:04" pubdate>
           2022年9月28日 晚上
         </time>
       </span>
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          50 字
+          835 字
         
       </span>
     
@@ -211,7 +211,7 @@
         
         
         
-          1 分钟
+          7 分钟
         
       </span>
     
@@ -249,17 +249,21 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">web开发笔记</h1>
+            <h1 style="display: none">JavaWeb</h1>
             
             
               <div class="markdown-body">
                 
-                <p>#一、静态web</p>
-<p>#二、动态web</p>
-<p>#三、css</p>
-<p>#四、JavaScript</p>
-<p>#五、jQuery</p>
-<p>#六、vue</p>
+                <h1 id="使用骨架创建Maven-Web项目"><a href="#使用骨架创建Maven-Web项目" class="headerlink" title="使用骨架创建Maven Web项目"></a>使用骨架创建Maven Web项目</h1><p>1、新建项目–maven–从archetype创建—maven-archetypt-webapp–main目录创建文件夹java–创建文件夹resources。（补齐需要的文件夹）</p>
+<p>在pom.xml中添加Tomcat Maven插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs pom.xml">&lt;build&gt;<br>  &lt;plugins&gt;<br>    &lt;plugin&gt;<br>      &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;<br>      &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;<br>      &lt;version&gt;2.2&lt;/version&gt;<br>    &lt;/plugin&gt;<br>  &lt;/plugins&gt;<br>&lt;/build&gt;<br></code></pre></td></tr></table></figure>
+
+<h2 id="创建一个servlet接口"><a href="#创建一个servlet接口" class="headerlink" title="创建一个servlet接口"></a>创建一个servlet接口</h2><h4 id="1、导入Servlet依赖坐标（pom-xml）"><a href="#1、导入Servlet依赖坐标（pom-xml）" class="headerlink" title="1、导入Servlet依赖坐标（pom.xml）"></a>1、导入Servlet依赖坐标（pom.xml）</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs Servlet依赖">&lt;dependency&gt;<br>  &lt;groupId&gt;javax.servlet&lt;/groupId&gt;<br>  &lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;<br>  &lt;version&gt;3.1.0&lt;/version&gt;<br>  &lt;scope&gt;provided&lt;/scope&gt;<br>&lt;/dependency&gt;<br></code></pre></td></tr></table></figure>
+
+<h4 id="2、定义一个类，实现Servlet接口，并重写方法"><a href="#2、定义一个类，实现Servlet接口，并重写方法" class="headerlink" title="2、定义一个类，实现Servlet接口，并重写方法"></a>2、定义一个类，实现Servlet接口，并重写方法</h4><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs angelscript"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-symbol">ServletDemo1</span> <span class="hljs-symbol">implements</span> <span class="hljs-symbol">Servlet</span>&#123;<br><br>​	<span class="hljs-keyword">public</span> <span class="hljs-built_in">void</span> service（）&#123;&#125;<br>		此方法在访问Servlet接口时便执行<br>&#125;<span class="hljs-comment">//重写方法</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="3、类上使用-Webservlet注解，配置访问路径"><a href="#3、类上使用-Webservlet注解，配置访问路径" class="headerlink" title="3、类上使用@Webservlet注解，配置访问路径"></a>3、类上使用@Webservlet注解，配置访问路径</h4><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">@Wevservlet（“demo”）<span class="hljs-regexp">//</span>配置后访问路径为<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span><span class="hljs-regexp">/demo/</span>demo1<br></code></pre></td></tr></table></figure>
+
 
                 
               </div>
@@ -278,7 +282,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/web/" class="category-chain-item">web</a>
+  <a href="/categories/JavaWeb/" class="category-chain-item">JavaWeb</a>
   
   
 
@@ -290,6 +294,13 @@
     </div>
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Maven/">#Maven</a>
+      
+    </div>
+  
 </div>
 
 
@@ -298,8 +309,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>web开发笔记</div>
-      <div>http://yuhang111881.github.io/2022/09/28/web/</div>
+      <div>JavaWeb</div>
+      <div>http://yuhang111881.github.io/2022/09/28/JavaWeb/</div>
     </div>
     <div class="license-meta">
       
@@ -343,9 +354,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/28/JavaWeb/" title="JavaWeb">
+                      <a href="/2022/09/29/%E4%BB%80%E4%B9%88%E6%98%AFServlet/" title="什么是Servlet">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JavaWeb</span>
+                        <span class="hidden-mobile">什么是Servlet</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -353,8 +364,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/28/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%A7%98%E7%B1%8D/" title="前端面试秘籍">
-                        <span class="hidden-mobile">前端面试秘籍</span>
+                      <a href="/2022/09/28/web/" title="web开发笔记">
+                        <span class="hidden-mobile">web开发笔记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

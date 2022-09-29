@@ -16,22 +16,22 @@
   <meta name="author" content="余航">
   <meta name="keywords" content="余航个人博客">
   
-    <meta name="description" content="#一、静态web #二、动态web #三、css #四、JavaScript #五、jQuery #六、vue">
+    <meta name="description" content="Servlet生命周期1、加载和实例化：默认情况下，Servlet第一次被访问时，容器来创建Servlet对象 2、初始化：在实例化之后，容器将调用Servlet的init（）方法来初始化这个对象，完成一些如配置文件的加载，创建连接等初始化工作，仅调用一次。 3、请求处理：每次请求Servlet的时候，Servlet容器都会调用Servlet中的Service（）方法对请求进行处理。 4、服务终止">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web开发笔记">
-<meta property="og:url" content="http://yuhang111881.github.io/2022/09/28/web/index.html">
+<meta property="og:title" content="什么是Servlet">
+<meta property="og:url" content="http://yuhang111881.github.io/2022/09/29/%E4%BB%80%E4%B9%88%E6%98%AFServlet/index.html">
 <meta property="og:site_name" content="Future">
-<meta property="og:description" content="#一、静态web #二、动态web #三、css #四、JavaScript #五、jQuery #六、vue">
+<meta property="og:description" content="Servlet生命周期1、加载和实例化：默认情况下，Servlet第一次被访问时，容器来创建Servlet对象 2、初始化：在实例化之后，容器将调用Servlet的init（）方法来初始化这个对象，完成一些如配置文件的加载，创建连接等初始化工作，仅调用一次。 3、请求处理：每次请求Servlet的时候，Servlet容器都会调用Servlet中的Service（）方法对请求进行处理。 4、服务终止">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-28T10:18:46.266Z">
-<meta property="article:modified_time" content="2022-09-28T10:18:47.822Z">
+<meta property="article:published_time" content="2022-09-29T12:18:04.262Z">
+<meta property="article:modified_time" content="2022-09-29T12:35:53.711Z">
 <meta property="article:author" content="余航">
 <meta property="article:tag" content="余航个人博客">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>web开发笔记 - Future</title>
+  <title>什么是Servlet - Future</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -172,7 +172,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="web开发笔记"></span>
+            <span id="subtitle" data-typed-text="什么是Servlet"></span>
           
         </div>
 
@@ -188,8 +188,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-28 18:18" pubdate>
-          2022年9月28日 晚上
+        <time datetime="2022-09-29 20:18" pubdate>
+          2022年9月29日 晚上
         </time>
       </span>
     
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          50 字
+          1.4k 字
         
       </span>
     
@@ -211,7 +211,7 @@
         
         
         
-          1 分钟
+          13 分钟
         
       </span>
     
@@ -249,17 +249,26 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">web开发笔记</h1>
+            <h1 style="display: none">什么是Servlet</h1>
             
             
               <div class="markdown-body">
                 
-                <p>#一、静态web</p>
-<p>#二、动态web</p>
-<p>#三、css</p>
-<p>#四、JavaScript</p>
-<p>#五、jQuery</p>
-<p>#六、vue</p>
+                <h4 id="Servlet生命周期"><a href="#Servlet生命周期" class="headerlink" title="Servlet生命周期"></a>Servlet生命周期</h4><p>1、加载和实例化：默认情况下，Servlet第一次被访问时，容器来创建Servlet对象</p>
+<p>2、初始化：在实例化之后，容器将调用Servlet的init（）方法来初始化这个对象，完成一些如配置文件的加载，创建连接等初始化工作，仅调用一次。</p>
+<p>3、请求处理：每次请求Servlet的时候，Servlet容器都会调用Servlet中的Service（）方法对请求进行处理。</p>
+<p>4、服务终止：当需要释放内存或者关闭容器的时候，容器调用Servlet实例的destroy（）方法完成资源的释放。</p>
+<h5 id="Servlet体系结构"><a href="#Servlet体系结构" class="headerlink" title="Servlet体系结构"></a>Servlet体系结构</h5><p>​	Servlet      —-Servlet根接口</p>
+<p>​	GenericServlet —-Servlet抽象实现类</p>
+<p>​	HttpServlet   –http请求类</p>
+<p>​	重写doget（）以及dopost（）方法，实现对不同请求方式，调用不同的方法；</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs scala"><span class="hljs-meta">@WebServlet</span>(<span class="hljs-string">&quot;/demo2&quot;</span>)<br>public <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ServletDemo4http</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HttpServlet</span> </span>&#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">protected</span> void doGet(<span class="hljs-type">HttpServletRequest</span> req, <span class="hljs-type">HttpServletResponse</span> resp) <span class="hljs-keyword">throws</span> <span class="hljs-type">ServletException</span>, <span class="hljs-type">IOException</span> &#123;<br>        <span class="hljs-type">System</span>.out.println(<span class="hljs-string">&quot;this is get&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">protected</span> void doPost(<span class="hljs-type">HttpServletRequest</span> req, <span class="hljs-type">HttpServletResponse</span> resp) <span class="hljs-keyword">throws</span> <span class="hljs-type">ServletException</span>, <span class="hljs-type">IOException</span> &#123;<br>        <span class="hljs-type">System</span>.out.println(<span class="hljs-string">&quot;this is post&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>​	</p>
+<h4 id="在Servlet中的Service（）方法判断访问的方式"><a href="#在Servlet中的Service（）方法判断访问的方式" class="headerlink" title="在Servlet中的Service（）方法判断访问的方式"></a>在Servlet中的Service（）方法判断访问的方式</h4><p>可创建一个逻辑类，将来其他类将继承次逻辑类，复用逻辑判断方法。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-title class_">HttpServletRequest</span> request=(<span class="hljs-title class_">HttpServletRequest</span>) servletRequest;<br><span class="hljs-comment">//获取http的request请求，并进行强制类型装换</span><br><span class="hljs-title class_">String</span> coo=request.<span class="hljs-title function_">getMethod</span>();<br><span class="hljs-comment">//使用getMethod（）方法获取请求方式</span><br><span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;GET&quot;</span>.<span class="hljs-title function_">equals</span>(coo))&#123;<br><br>    <span class="hljs-title function_">doget</span>(servletRequest,servletResponse);<br>&#125;<br><span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;POST&quot;</span>.<span class="hljs-title function_">equals</span>(coo))&#123;<br><br>    <span class="hljs-title function_">dopost</span>(servletRequest,servletResponse);<br>&#125;<br><br><span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">dopost</span>(<span class="hljs-params">ServletRequest servletRequest, ServletResponse servletResponse</span>) &#123;<br>    &#125;<br><br>    <span class="hljs-keyword">protected</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">doget</span>(<span class="hljs-params">ServletRequest servletRequest, ServletResponse servletResponse</span>) &#123; <br>    <span class="hljs-comment">//protected  将来方法要被别的类进行复写</span><br>    &#125;<br></code></pre></td></tr></table></figure>
+
+<p>将来在其他类中直接继承逻辑类，调用doget（），或者dopost（）方法进行逻辑判断。</p>
 
                 
               </div>
@@ -278,7 +287,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/web/" class="category-chain-item">web</a>
+  <a href="/categories/Servlet/" class="category-chain-item">Servlet</a>
   
   
 
@@ -298,8 +307,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>web开发笔记</div>
-      <div>http://yuhang111881.github.io/2022/09/28/web/</div>
+      <div>什么是Servlet</div>
+      <div>http://yuhang111881.github.io/2022/09/29/什么是Servlet/</div>
     </div>
     <div class="license-meta">
       
@@ -311,7 +320,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年9月28日</div>
+          <div>2022年9月29日</div>
         </div>
       
       
@@ -343,18 +352,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/28/JavaWeb/" title="JavaWeb">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JavaWeb</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/28/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E7%A7%98%E7%B1%8D/" title="前端面试秘籍">
-                        <span class="hidden-mobile">前端面试秘籍</span>
+                      <a href="/2022/09/28/JavaWeb/" title="JavaWeb">
+                        <span class="hidden-mobile">JavaWeb</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
