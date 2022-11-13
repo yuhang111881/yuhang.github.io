@@ -18,20 +18,22 @@
   
     <meta name="description" content="一、安装git二、安装node.js三、安装typora四、安装hexo博客1cnpm install -g hexo-cli  1hexo -v  &#x3D;&#x3D;查看安装是否成功以及版本  1、建站hexo init  name 初始化博客 &#x2F;&#x2F;创建一个name文件夹 hexo s开启服务 服务启动后即可使用： http:&#x2F;&#x2F;localhost:4000&#x2F; 进行访问 随后可进行私人定制">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo个人博客搭建">
+<meta property="og:title" content="HEXO个人博客搭建">
 <meta property="og:url" content="http://yuhang111881.github.io/2022/09/25/hexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="Future">
 <meta property="og:description" content="一、安装git二、安装node.js三、安装typora四、安装hexo博客1cnpm install -g hexo-cli  1hexo -v  &#x3D;&#x3D;查看安装是否成功以及版本  1、建站hexo init  name 初始化博客 &#x2F;&#x2F;创建一个name文件夹 hexo s开启服务 服务启动后即可使用： http:&#x2F;&#x2F;localhost:4000&#x2F; 进行访问 随后可进行私人定制">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-09-25T14:20:20.000Z">
-<meta property="article:modified_time" content="2022-09-26T06:04:50.767Z">
+<meta property="article:modified_time" content="2022-11-12T07:14:05.536Z">
 <meta property="article:author" content="余航">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
-  <title>hexo个人博客搭建 - Future</title>
+  
+  <title>HEXO个人博客搭建 - Future</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -144,6 +146,30 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -166,13 +192,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/1.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hexo个人博客搭建"></span>
+            <span id="subtitle" data-typed-text="HEXO个人博客搭建"></span>
           
         </div>
 
@@ -249,7 +275,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">hexo个人博客搭建</h1>
+            <h1 style="display: none">HEXO个人博客搭建</h1>
             
             
               <div class="markdown-body">
@@ -333,7 +359,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hexo个人博客搭建</div>
+      <div>HEXO个人博客搭建</div>
       <div>http://yuhang111881.github.io/2022/09/25/hexo个人博客搭建/</div>
     </div>
     <div class="license-meta">
@@ -400,6 +426,34 @@
             </div>
 
             
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"nhXbnKP9RtSWeaAmdl7GrfR3-gzGzoHsz","appKey":"LvVJ0ioNdd5SolRwr1lwJjRl","path":"window.location.pathname","placeholder":null,"avatar":"hide","meta":["nick","mail"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"highlight":"ture","enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
           </article>
         </div>
       </div>
@@ -492,6 +546,30 @@
        <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>余航</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Future</span></a> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
   
   
   
@@ -638,6 +716,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 

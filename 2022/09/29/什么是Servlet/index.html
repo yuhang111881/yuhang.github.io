@@ -23,12 +23,16 @@
 <meta property="og:site_name" content="Future">
 <meta property="og:description" content="Servlet生命周期1、加载和实例化：默认情况下，Servlet第一次被访问时，容器来创建Servlet对象 2、初始化：在实例化之后，容器将调用Servlet的init（）方法来初始化这个对象，完成一些如配置文件的加载，创建连接等初始化工作，仅调用一次。 3、请求处理：每次请求Servlet的时候，Servlet容器都会调用Servlet中的Service（）方法对请求进行处理。 4、服务终止">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yuhang111881.github.io/img/1.png">
 <meta property="article:published_time" content="2022-09-29T12:18:04.262Z">
-<meta property="article:modified_time" content="2022-09-29T12:35:53.711Z">
+<meta property="article:modified_time" content="2022-11-12T07:02:01.576Z">
 <meta property="article:author" content="余航">
 <meta property="article:tag" content="余航个人博客">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://yuhang111881.github.io/img/1.png">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>什么是Servlet - Future</title>
@@ -144,6 +148,30 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -166,7 +194,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/1.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -368,6 +396,34 @@
             </div>
 
             
+  <article id="comments" lazyload>
+    
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"nhXbnKP9RtSWeaAmdl7GrfR3-gzGzoHsz","appKey":"LvVJ0ioNdd5SolRwr1lwJjRl","path":"window.location.pathname","placeholder":null,"avatar":"hide","meta":["nick","mail"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"highlight":"ture","enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+  </article>
+
+
           </article>
         </div>
       </div>
@@ -460,6 +516,30 @@
        <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>余航</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Future</span></a> 
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
   
   
   
@@ -606,6 +686,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
